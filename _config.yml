@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -96,27 +96,27 @@ author:
   name             : "Patrik Pettersson"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "\"I'm not an expert but\""
-  location         : "Somewhere"
+  location         : "Stockholm"
   email            :
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/kaffepanna"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+    #- label: "Email"
+    #  icon: "fas fa-fw fa-envelope-square"
+    #  # url: "mailto:your.name@email.com"
+    #- label: "Website"
+    #  icon: "fas fa-fw fa-link"
+    #  # url: "https://your-website.com"
+    #- label: "Twitter"
+    #  icon: "fab fa-fw fa-twitter-square"
+    #  # url: "https://twitter.com/"
+    #- label: "Facebook"
+    #  icon: "fab fa-fw fa-facebook-square"
+    #  # url: "https://facebook.com/"
+    #- label: "GitHub"
+    #  icon: "fab fa-fw fa-github"
+    #  url: "https://github.com/kaffepanna"
+    #- label: "Instagram"
+    #  icon: "fab fa-fw fa-instagram"
+    #  # url: "https://instagram.com/"
 
 # Site Footer
 footer:
@@ -219,6 +219,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-postfiles
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -227,7 +228,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-
+  - jekyll-postfiles
 
 # Archives
 #  Type
@@ -279,3 +280,9 @@ defaults:
       comments: # true
       share: true
       related: true
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
+
+
